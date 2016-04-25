@@ -244,7 +244,7 @@
 		"zpos"			"-9"
 		"wide"			"197"
 		"tall"			"700"	
-		"fillcolor"		"DarkGray"	//"0 0 0 200"
+		"fillcolor"		"DarkGray"	//"0 0 0 210"
 		"visible"		"1"
 		"enabled"		"1"
 	}
@@ -413,11 +413,11 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"QuestLogButton"
-		"xpos"			"208"
-		"ypos"			"440"
+		"xpos"			"r134"
+		"ypos"			"20"
 		"zpos"			"1"
-		"wide"			"20"
-		"tall"			"20"
+		"wide"			"32"
+		"tall"			"32"
 		"autoResize"	"0"
 		"pinCorner"		"3"
 		"visible"		"1"
@@ -449,17 +449,17 @@
 			"dulltext"		"0"
 			"brighttext"	"0"
 			"default"		"1"
-			"sound_depressed"	"UI/buttonclick.wav"
-			"sound_released"	"UI/buttonclickrelease.wav"
 			"actionsignallevel" "2"
 			"proportionaltoparent"	"1"
 				
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
-			"paintbackground"	"0"
-			"paintborder"		"0"
-			"image_drawcolor"	"235 226 202 255"
-			"image_armedcolor"	"255 255 255 255"
+			"paintbackground"	"1"
+			"defaultBgColor_override"	"42 42 42 255"
+			"armedBgColor_override"		"57 57 57 255"
+			"depressedBgColor_override"	"42 42 42 255"
+			"border_default"			"NoBorder"
+			"border_armed"				"NoBorder"
 
 			"SubImage"
 			{
@@ -468,8 +468,8 @@
 				"xpos"			"cs-0.5"
 				"ypos"			"cs-0.5"
 				"zpos"			"1"
-				"wide"			"f0"
-				"tall"			"f0"
+				"wide"			"24"
+				"tall"			"24"
 				"visible"		"1"
 				"enabled"		"1"
 				"scaleImage"	"1"
@@ -485,8 +485,8 @@
 		{
 			"ControlName"	"EditablePanel"
 			"fieldName"		"NotificationsContainer"
-			"xpos"			"rs1"
-			"ypos"			"0"
+			"xpos"			"r318"
+			"ypos"			"55"
 			"zpos"			"10"
 			"wide"			"16"
 			"tall"			"16"
@@ -600,8 +600,8 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"MOTD_Panel"
-		"xpos"			"r320"
-		"ypos"			"20"
+		"xpos"			"r318"
+		"ypos"			"55"
 		"zpos"			"1"
 		"wide"			"300"
 		"tall"			"360"
@@ -954,12 +954,102 @@
 			}
 		}
 	}	
-	
+	"WatchStreamButton"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"WatchStreamButton"
+		"xpos"			"r92"
+		"ypos"			"20"
+		"zpos"			"1"
+		"wide"			"32"
+		"tall"			"32"
+		"autoResize"	"0"
+		"pinCorner"		"3"
+		"visible"		"1"
+		"enabled"		"1"
+		"tabPosition"	"0"
+		
+		"navUp"			"Notifications_Panel"
+		"navLeft"		"SettingsButton"
+
+		"SubButton"
+		{
+			"ControlName"	"CExImageButton"
+			"fieldName"		"SubButton"
+			"xpos"			"0"
+			"ypos"			"0"
+			"wide"			"f0"
+			"tall"			"f0"
+			"autoResize"	"0"
+			"pinCorner"		"3"
+			"visible"		"1"
+			"enabled"		"1"
+			"tabPosition"	"0"
+			"textinsetx"	"25"
+			"labelText"		""
+			"use_proportional_insets" "1"
+			"font"			"HudFontSmallBold"
+			"command"		"watch_stream"
+			"textAlignment"	"west"
+			"dulltext"		"0"
+			"brighttext"	"0"
+			"default"		"1"
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"vo/null.mp3"
+			"actionsignallevel" "2"
+			"proportionaltoparent"	"1"
+				
+			"sound_depressed"	"UI/buttonclick.wav"
+			"sound_released"	"UI/buttonclickrelease.wav"
+			"paintbackground"	"1"
+			"defaultBgColor_override"	"42 42 42 255"
+			"armedBgColor_override"		"57 57 57 255"
+			"depressedBgColor_override"	"42 42 42 255"
+			"border_default"			"NoBorder"
+			"border_armed"				"NoBorder"
+
+			"SubImage"
+			{
+				"ControlName"	"ImagePanel"
+				"fieldName"		"SubImage"
+				"xpos"			"cs-0.5"
+				"ypos"			"cs-0.5"
+				"zpos"			"1"
+				"wide"			"24"
+				"tall"			"24"
+				"visible"		"1"
+				"enabled"		"1"
+				"scaleImage"	"1"
+				"image"			"button_streaming"
+
+				"proportionaltoparent"	"1"
+				"mouseinputenabled"	"0"
+				"keyboardinputenabled" "0"
+			}		
+		}
+	}
+	"StreamListPanel"
+	{
+		"ControlName"	"CTFStreamListPanel"
+		"fieldName"		"StreamListPanel"
+		"xpos"			"r360"
+		"ypos"			"55"
+		"zpos"			"1"
+		"wide"			"300"
+		"tall"			"350"
+		"visible"		"0"
+		"PaintBackgroundType"	"2"
+		"paintbackground"	"0"
+		"border"		"MainMenuHighlightBorder"
+
+		"navDown"		"SettingsButton"		// when a sub element can't nav down it will pass through this
+		"navLeft"		"WatchStreamButton"	// when a sub element can't nav left it will pass through this
+	}
 	"Notifications_ShowButtonPanel"
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"Notifications_ShowButtonPanel"
-		"xpos"			"r87"
+		"xpos"			"r176"
 		"ypos"			"20"
 		"zpos"			"1"
 		"wide"			"32"
@@ -4008,7 +4098,7 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldname"		"EventPromo"
-		"xpos"			"c50"
+		"xpos"			"c-242"
 		"ypos"			"50"
 		"zpos"			"-60"
 		"wide"			"320"
@@ -4044,7 +4134,7 @@
 			"wide"			"p0.8"
 			"tall"			"120"
 			"visible"		"1"
-			"PaintBackgroundType"	"1"
+			"PaintBackgroundType"	"0"
 			"proportionaltoparent"	"1"
 
 			"paintborder"	"1"
@@ -4223,7 +4313,7 @@
 					}
 					"6"
 					{
-						"item"		"Taunt: Aerobic Taunt"
+						"item"		"Taunt: Mannrobics"
 						"show_market"	"0"
 					}
 				}

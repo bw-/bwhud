@@ -14,6 +14,13 @@
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../hud/color_panel_brown"
+		
+		if_comp
+		{
+			"visible"	"0"
+			"ypos"	"0"
+			"xpos"	"c36"
+		}
 
 
 		"src_corner_height"	"23"				// pixels inside the image
@@ -38,6 +45,11 @@
 		"scaleImage"		"1"	
 		"teambg_2"		"replay/thumbnails/bg_black"
 		"teambg_3"		"replay/thumbnails/bg_black"	
+		
+		if_comp
+		{
+			"ypos"	"27"
+		}
 	}
 
 	"ObjectiveStatusTimePanel"
@@ -51,7 +63,16 @@
 		"tall"				"480"
 		"visible"			"0"
 		"enabled"			"1"
-
+		
+		if_comp
+		{
+			"ypos"	"0"
+		}
+		"TimeBG"
+		{
+			"visible"	"0"
+		}
+		
 		"TimePanelValue"
 		{
 			"ControlName"		"CExLabel"
@@ -66,18 +87,25 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"textAlignment"		"center"
+			
+			if_comp
+			{
+				"font"		"solFontRegular14"
+				"xpos"		"c-47"
+				"ypos"		"20"
+			}
 		}
         
         "TimePanelLabel"
 		{
 			"ControlName"		"CExLabel"
 			"fieldName"		"TimePanelLabel"
-			"font"			"solFontRegular12"
+			"font"			"solFontRegular14"
 			"fgcolor"	    "White"
 			"labelText"		"CAPS"
 			"textAlignment"	"center"
 			"xpos"			"c-30"
-			"ypos"			"14	"
+			"ypos"			"14"
 			"zpos"			"0"
 			"wide"			"92"
 			"tall"			"20"
@@ -85,6 +113,13 @@
 			"pinCorner"		"0"
 			"visible"		"0"
 			"enabled"		"1"
+			
+			if_comp
+			{
+				"visible"	"1"
+				"xpos"		"c-23"
+				"ypos"		"20"
+			}
 		}
 	}
 
@@ -107,6 +142,13 @@
 		"pinCorner"		"0"
 		"visible"		"0"
 		"enabled"		"1"
+		
+		if_comp
+		{
+			"xpos"	"c-27"
+			"ypos"	"20"
+			"font"	"solFontRegular14"
+		}
 	}
 	"StopWatchPointsLabel"
 	{
@@ -125,6 +167,11 @@
 		"pinCorner"		"0"
 		"visible"		"0"
 		"enabled"		"1"
+		
+		if_comp
+		{
+			"ypos"	"24"
+		}
 	}
 	"StopWatchLabel"
 	{
@@ -144,6 +191,11 @@
 		"visible"		"0"
 		"enabled"		"1"
 		"wrap"			"0"
+		
+		if_comp
+		{
+			"ypos"	"20"
+		}
 	}
 
 	"HudStopWatchDescriptionBG"
@@ -160,6 +212,11 @@
 		"visible"		"0"
 		"enabled"		"0"
 		"image"			"../hud/objectives_timepanel_suddendeath"
+		
+		if_comp
+		{
+			"ypos"	"42"
+		}
 
 
 		"src_corner_height"	"2"				// pixels inside the image
@@ -187,5 +244,10 @@
 		"visible"		"0"
 		"enabled"		"1"
 		"wrap"			"0"
+		
+		if_comp
+		{
+			"ypos"	"38"
+		}
 	}
 }

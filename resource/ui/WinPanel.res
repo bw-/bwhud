@@ -109,10 +109,10 @@
 			"enabled"		"1"
 		}							
 	}
-	"WinPanelBG"
+	"WinPanelBGBorder"
 	{
-		"ControlName"		"ImagePanel"
-		"fieldName"		"WinPanelBG"
+		"ControlName"		"EditablePanel"
+		"fieldName"		"WinPanelBGBorder"
 		"xpos"			"-18"
 		"ypos"			"400"
 		"zpos"			"-1"
