@@ -18,16 +18,16 @@
 		"fieldname"	"Crosshair"
         "textAlignment"	"center"
 		"xpos"		"0"
-		"ypos"		"-1"
+		"ypos"		"0"
 		"zpos"		"-200"
 		"wide"		"f0"
 		"tall"		"480"
         "enabled"	"1"
         
-        "visible"	"0"	//"1" to enable
+        "visible"	"1"	//"1" to enable
 		
 
-		"labeltext"	""              //Change this to use a different crosshair
+		"labeltext"	"E"              //Change this to use a different crosshair
                                      //You can see the list of crosshairs in yacrosshairs.png
         
         "font"		"CrosshairAA"    //Use "CrosshairOL" for a crosshair with an outline
@@ -36,7 +36,7 @@
                                      //You can add "Small" or "Big" at the end to change the size
                                      //e.g. "CrosshairOLSmall"
         
-        "fgcolor"	"Crosshair"      //Color is changed via the clientscheme
+        "fgcolor"	"255 255 255 40"      //Color is changed via the clientscheme
                                      //in the "/resource/" folder
 	}
     
@@ -145,26 +145,56 @@
 	//Fog's Crosshair
 	/////////////////////////////////////////////////////////////////////////////
 
-	
-	HudxHair
-	{
-		"controlName"	"CExLabel"
-		"fieldName"	 	"HudCrossHair"
-		"visible"		"0"
-		"enabled"		"1"
-		"zpos"			"1"
+
+	"fogCrosshair"
+		{
+
+
+		"controlname"	"CExLabel"
+		"fieldname"	"fogCrosshair"
+		
+		"visible"	"0"			//1
+
+
+		"enabled"	"1"
+
+		"xpos"		"c-17"
+		"ypos"		"c-13"
+		"zpos"		"2"
+		
+		"wide"		"31"
+		"tall"		"30"
+
+
+		"font"		"fogCrosshairSmall"
 
 
 
-		"xpos"			"c-15"
-		"ypos"			"c-12"
-		"wide"			"30"
-		"tall"				"30"
 
-		"font"			"HudCrossHair"
-		"labelText"		""
-		"fgcolor"		"255 255 255 255"
+
+		"labeltext"	"2"
+		// Change the "1" to represent the crosshair you want displayed in the Crosshairs.jpg
+		
+		// Remember, each resolution behaves differently, if your crosshair is skewed, not centered,
+		// you will have to play around with the "xpos", "ypos", "wide" and "tall" values.
+		// There are no fixed numbers for this
+
+
+
 		"textAlignment"	"center"
+		
+		"fgcolor"	"Crosshair"
+		
+		// You can insert an RGB code here instead of the "White"
+		
+		// R	G	B	Transparency	= color
+		// "255 255 255 255"	= White
+		// "255 255 0 255 	= Yellow
+		// "145 225 25 255"	= Green
+		// If you change this, remember to change the same value in HudAnimations_tf.txt
+		// Otherwise the crosshair will change back to the default white color after
+		// flashing upon giving damage.
+
 	}
 	
 	/////////////////////////////////////////////////////////////////////////////
@@ -2030,7 +2060,18 @@
 		"enabled" "1"
 		"xpos"	"0"
 		"ypos"	"0"
-		"zpos"	"3"
+		"zpos"	"2"
+		"wide"	"f0"
+		"tall"	"f0"
+	}
+	HudTeamStatus
+	{
+		"fieldName" "HudTeamStatus"
+		"visible" "1"
+		"enabled" "1"
+		"xpos"	"0"
+		"ypos"	"0"
+		"zpos"	"2"
 		"wide"	"f0"
 		"tall"	"f0"
 	}
