@@ -8,7 +8,7 @@
 	}
 	"Version"
 	{
-		"label" "Release Version 2.3.1"
+		"label" "Release Version 2.4.0"
 		"command" "engine con_enable 1; engine showconsole; clear; echo Thanks for using my HUD!"
 		"OnlyAtMenu" "1"
 	}
