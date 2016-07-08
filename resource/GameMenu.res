@@ -16,7 +16,7 @@
 	"QuickplayButton"
 	{
 		"label" "#MMenu_StartPlaying" 
-		"command" "quickplay"
+		"command" "play_casual"
 		"OnlyAtMenu" "1"
 		"tooltip" "Quick Play"
 	}
@@ -30,17 +30,17 @@
 	"PlayPVEButton"
 	{
 		"label" "#MMenu_PlayCoop" 
-		"command" "playpve"
+		"command" "play_mvm"
 		"OnlyAtMenu" "1"
 		"tooltip" "Mann Up"
 	}
 	"PlayCompButton"
 	{
 		"label" "#MMenu_PlayComp"
-		"command" "ladder_ui_show"
+		"command" "play_competitive"
 		"OnlyAtMenu" "1"
 		"tooltip"	"Play Matchmaking!"
-	} 
+	}
 	"ServerBrowserButton"
 	{
 		"label" "#MMenu_BrowseServers" 
