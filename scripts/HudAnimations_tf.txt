@@ -4,8 +4,8 @@
 
 event DamagedPlayer
 {
-    Animate CrossHairCircleSmaller 	FgColor 	"CrosshairDamage" 	Linear 0.0 0.00001
-	Animate CrossHairCircleSmaller 	FgColor 	"White" 	Linear 0.10 0.10001
+    Animate CrossHairCircle 	FgColor 	"CrosshairDamage" 	Linear 0.0 0.00001
+	Animate CrossHairCircle 	FgColor 	"White" 	Linear 0.10 0.10001
 }
 
 //===========================================
@@ -1116,7 +1116,7 @@ event CollectionCrafting_LetterSend
 	Animate LetterFront			xpos	c-320	Deaccel 0 0.3
 	Animate DrawingPanel		xpos	c-320	Deaccel 0 0.3
 
-	RunEventChild BehindItemParticlePanel PlayEnvelopSendParticles 0.3
+	RunEventChild BehindItemParticlePanel StartParticle2 0.3
 	Animate Stamp				xpos 1120	Accel 0.3 0.2
 	Animate LetterFront			xpos 1000	Accel 0.3 0.2
 	Animate DrawingPanel		xpos 1000	Accel 0.3 0.2
@@ -1124,17 +1124,17 @@ event CollectionCrafting_LetterSend
 	FireCommand	0.2 "playsound ui/trade_up_envelope_slide_out.wav"
 }
 
-event PlayNewItemParticles
+event StartParticle0
 {
 	FireCommand 0 "start0"
 }
 
-event PlayCrateSmashParticles
+event StartParticle1
 {
 	FireCommand 0 "start1"
 }
 
-event PlayEnvelopSendParticles
+event StartParticle2
 {
 	FireCommand 0 "start2"
 }
@@ -1154,7 +1154,7 @@ event CollectionCrafting_ItemRecieved
 	FireCommand 0	"playcratesequence1"
 	SetVisible	NewItemPanel					0 0 
 	SetVisible ReturnModel						1 0.05
-	RunEventChild BehindItemParticlePanel PlayCrateSmashParticles 0.2
+	RunEventChild BehindItemParticlePanel StartParticle1 0.2
 
 	FireCommand	0 "playsound ui/trade_up_crate_smash.wav"
 
@@ -1162,7 +1162,7 @@ event CollectionCrafting_ItemRecieved
 	SetVisible CloseButton		  1			1.5
 
 	FireCommand 2.1 "playcratesequence2"
-	RunEventChild BehindItemParticlePanel PlayNewItemParticles 1.5
+//	RunEventChild BehindItemParticlePanel PlayNewItemParticles 1.5
 	
 	FireCommand	1.0 "playsound ../player/taunt_medic_heroic.wav"
 }
@@ -1557,15 +1557,26 @@ event HudTournament_AnimateTeams_Out
 	Animate BlueTeamPanel xpos -155 Accel 0 0.68
 }
 
-event HudMatchSummary_ShowMatchStartDoors
+
+event HudMatchStatus_ShowMatchStartDoors
 {
+
+
+
 	SetVisible	MatchDoors	1	0
 	SetVisible	BlueTeamPanel	1	0
 	SetVisible	RedTeamPanel	1	0
 	SetVisible CountdownLabel 1 0
 	SetVisible CountdownLabelShadow 1 0
+
 	Animate CountdownLabel ypos 150 Linear 0 0
 	Animate CountdownLabelShadow ypos 150 Linear 0 0
+
+
+
+
+
+
 
 	Animate CountdownLabel ypos c-3 Gain 0.75 0 0.4
 	Animate CountdownLabelShadow ypos c-0 Gain 0.75 0 0.4
@@ -1582,12 +1593,16 @@ event HudMatchSummary_ShowMatchStartDoors
 	SetVisible CountdownLabel 0 9.9
 	SetVisible CountdownLabelShadow 0 9.9
 
+
+
+
+
 	RunEvent HudTournament_DoorsCleanup 10
 	
 	SetVisible CountdownBG 1 11
 }
 
-event HudMatchSummary_ShowCountdown
+event HudMatchStatus_ShowCountdown
 {
 	SetVisible CountdownLabel 1 0
 	SetVisible CountdownLabelShadow 1 0
@@ -1649,18 +1664,6 @@ event HudTournament_HideTimer
 	SetVisible CountdownBG  0 0
 	SetVisible CountdownLabel 0 0
 	SetVisible CountdownLabelShadow 0 0
-}
-
-event Hud_StatsAndMedals_Show
-{
-	SetVisible	DrawingPanel	0	0
-	SetVisible	StatsBgPanel	1	0
-	SetVisible	StatsLabelPanel	1	0
-	Animate StatsLabelPanel ypos 75 Accel 0 0.1
-	Animate BlueMedals ypos 75 Accel 0 0.1
-	Animate RedMedals ypos 75 Accel 0 0.1
-	Animate BlueTeamLabel ypos 107 Accel 0 0.1
-	Animate RedTeamLabel ypos 107 Accel 0 0.1
 }
 
 event CompetitiveGame_HideDisconnectButton

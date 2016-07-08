@@ -569,7 +569,8 @@
 			"dulltext"		"0"
 			"brighttext"	"0"
 			"default"		"1"
-			 "Command"		"motd_show"
+			"actionsignallevel"	"2"
+			"Command"		"motd_show"
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
 			"paintbackground"	"1"
@@ -661,6 +662,7 @@
 			"dulltext"		"0"
 			"brighttext"	"0"
 			"default"		"0"
+			"actionsignallevel"	"2"
 
 
 			"sound_depressed"	"UI/buttonclick.wav"
@@ -852,6 +854,8 @@
 			"brighttext"	"0"
 			"default"		"1"
 			"command"		"motd_viewurl"
+			"proportionaltoparent"	"1"
+			"actionsignallevel"	"2"
 
 			"border_default"	"NoBorder"
 			"border_armed"		"NoBorder"
@@ -887,6 +891,7 @@
 			"brighttext"	"0"
 			"default"		"1"
 			"Command"		"motd_prev"
+			"actionsignallevel"	"2"
 
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
@@ -931,6 +936,7 @@
 			"brighttext"	"0"
 			"default"		"1"
 			"Command"		"motd_next"
+			"actionsignallevel"	"2"
 
 			"sound_depressed"	"UI/buttonclick.wav"
 			"sound_released"	"UI/buttonclickrelease.wav"
@@ -1115,6 +1121,7 @@
 			"dulltext"		"0"
 			"brighttext"	"0"
 			"default"		"1"
+			"actionsignallevel"	"2"
 
 			"Command"		"noti_show"
 
@@ -1180,6 +1187,7 @@
 			"dulltext"		"0"
 			"brighttext"	"0"
 			"default"		"0"
+			"actionsignallevel"	"2"
 
 			"Command"		"noti_hide"
 
@@ -4283,37 +4291,27 @@
 				{
 					"0"
 					{
-						"item"		"Unused Operation Tough Break Pass"
+						"item"		"Competitive Matchmaking Official"
 						"show_market"	"0"
 					}
 					"1"
 					{
-						"item"		"Tough Break Case 01 Pyroland"
-						"show_market"	"1"
+						"item"		"Taunt: The Carlton"
+						"show_market"	"0"
 					}
 					"2"
 					{
-						"item"		"Tough Break Case 02 Warbirds"
-						"show_market"	"1"
+						"item"		"Taunt: The Balloonibouncer"
+						"show_market"	"0"
 					}
 					"3"
 					{
-						"item"		"Tough Break Key"
+						"item"		"Taunt: Disco Fever"
 						"show_market"	"0"
 					}
 					"4"
 					{
-						"item"		"Tough Break Cosmetic Case"
-						"show_market"	"1"
-					}
-					"5"
-					{
-						"item"		"Tough Break Cosmetic Key"
-						"show_market"	"0"
-					}
-					"6"
-					{
-						"item"		"Taunt: Mannrobics"
+						"item"		"Taunt: The Fubar Fanfare"
 						"show_market"	"0"
 					}
 				}
