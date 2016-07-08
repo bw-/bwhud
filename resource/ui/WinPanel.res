@@ -389,6 +389,20 @@
 		"fillcolor"		"White"
 		"PaintBackgroundType"	"0"
 	}
+	"Player1Badge"
+	{
+		"ControlName"	"CTFBadgePanel"
+		"fieldName"		"Player1Badge"
+		"xpos"			"11"
+		"ypos"			"130"
+		"zpos"			"3"
+		"wide"			"25"
+		"tall"			"25"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+	}
 	"Player1Avatar"		
 	{
 		"ControlName"		"CAvatarImagePanel"
@@ -458,6 +472,20 @@
 		"dulltext"		"0"
 		"brighttext"		"0"
 	}
+	"Player2Badge"
+	{
+		"ControlName"	"CTFBadgePanel"
+		"fieldName"		"Player2Badge"
+		"xpos"			"11"
+		"ypos"			"152"
+		"zpos"			"3"
+		"wide"			"25"
+		"tall"			"25"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+	}
 	"Player2Avatar"		
 	{
 		"ControlName"		"CAvatarImagePanel"
@@ -526,6 +554,20 @@
 		"textAlignment"		"east"
 		"dulltext"		"0"
 		"brighttext"		"0"
+	}
+	"Player3Badge"
+	{
+		"ControlName"	"CTFBadgePanel"
+		"fieldName"		"Player3Badge"
+		"xpos"			"11"
+		"ypos"			"174"
+		"zpos"			"3"
+		"wide"			"25"
+		"tall"			"25"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
 	}
 	"Player3Avatar"		
 	{
@@ -653,7 +695,21 @@
 		"fillcolor"		"250 234 201 255"
 		"PaintBackgroundType"	"0"
 	}
-	"KillStreakPlayer1Avatar"		[$WIN32]
+	"KillStreakPlayer1Badge"
+	{
+		"ControlName"	"CTFBadgePanel"
+		"fieldName"		"KillStreakPlayer1Badge"
+		"xpos"			"11"
+		"ypos"			"211"
+		"zpos"			"3"
+		"wide"			"25"
+		"tall"			"25"
+		"autoResize"	"0"
+		"pinCorner"		"0"
+		"visible"		"0"
+		"enabled"		"1"
+	}
+	"KillStreakPlayer1Avatar"
 	{
 		"ControlName"		"CAvatarImagePanel"
 		"fieldName"		"KillStreakPlayer1Avatar"
