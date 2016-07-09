@@ -256,7 +256,7 @@
 		if_match
 		{
 			"xpos"					"cs-0.5"
-			"ypos"					"130"
+			"ypos"					"0"
 			"ypos_minmode"			"0"
 			"delta_item_x"			"35"
 			"delta_item_start_y"	"12"
