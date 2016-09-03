@@ -164,7 +164,7 @@
 		"tall"			"70"
 		"visible"		"1"
 		"PaintBackgroundType"	"2"
-		"border"		"MainMenuBGBorder"
+		"border"		"NoBorder"
 		"proportionaltoparent"	"1"
 
 		if_mini
@@ -213,7 +213,7 @@
 					"visible"		"1"
 					"enabled"		"1"
 					"font"			"HudFontSmallestBold"
-					"fgcolor_override"	"TanLight"
+					"fgcolor_override"	"WhiteS"
 					"textAlignment"	"north-west"
 					"labelText"		"%level%"
 					"proportionaltoparent"	"1"
@@ -231,7 +231,7 @@
 					"visible"		"1"
 					"enabled"		"1"
 					"font"			"ItemFontAttribSmall"
-					"fgcolor_override"	"TanLight"
+					"fgcolor_override"	"WhiteS"
 					"textAlignment"	"south-west"
 					"labelText"		"%current_xp%"
 					"proportionaltoparent"	"1"
@@ -249,7 +249,7 @@
 					"visible"		"1"
 					"enabled"		"1"
 					"font"			"ItemFontAttribSmall"
-					"fgcolor_override"	"TanLight"
+					"fgcolor_override"	"WhiteS"
 					"textAlignment"	"south-east"
 					"labelText"		"%next_level_xp%"
 					"proportionaltoparent"	"1"
@@ -287,12 +287,14 @@
 						"fieldName"		"ContinuousProgressBar"
 						"xpos"			"cs-0.5"
 						"ypos"			"cs-0.5"
+						"zpos"			"11"
 						"wide"			"f4"
 						"tall"			"f4"
 						"proportionaltoparent"	"1"
 						"progress"		"0"
 
-						"fgcolor_override"	"CreditsGreen"
+						"fgcolor_override"	"Flavor"
+						"bgcolor_override"	"GrayBG"
 					}
 
 					"Frame"
@@ -305,7 +307,7 @@
 						"tall"			"f0"
 						"zpos"			"5"
 						"proportionaltoparent"	"1"
-						"border"		"InnerShadowBorderThin"
+						"border"		"NoBorder"
 					}
 				}
 			}
@@ -319,7 +321,7 @@
 				"wide"			"f0"
 				"tall"			"p0.45"
 				"proportionaltoparent"	"1"
-				"bgcolor_override"	"0 0 0 150"
+				"bgcolor_override"	"0 0 0 0"
 
 				"if_mini"
 				{
@@ -336,7 +338,7 @@
 					"wide"			"f0"
 					"tall"			"f0"
 					"proportionaltoparent"	"1"
-					"border"		"InnerShadowBorder"
+					"border"		"NoBorder"
 				}
 
 
@@ -354,7 +356,7 @@
 					"visible"		"1"
 					"enabled"		"1"
 					"font"			"HudFontSmallest"
-					"fgcolor_override"	"TanLight"
+					"fgcolor_override"	"WhiteS"
 					"textAlignment"	"north-west"
 					"labelText"		"%stat_games%"
 					"proportionaltoparent"	"1"
@@ -372,7 +374,7 @@
 					"visible"		"1"
 					"enabled"		"1"
 					"font"			"HudFontSmallest"
-					"fgcolor_override"	"TanLight"
+					"fgcolor_override"	"WhiteS"
 					"textAlignment"	"north-west"
 					"labelText"		"%stat_kills%"
 					"proportionaltoparent"	"1"
@@ -390,7 +392,7 @@
 					"visible"		"1"
 					"enabled"		"1"
 					"font"			"HudFontSmallest"
-					"fgcolor_override"	"TanLight"
+					"fgcolor_override"	"WhiteS"
 					"textAlignment"	"north-west"
 					"labelText"		"%stat_deaths%"
 					"proportionaltoparent"	"1"
@@ -409,7 +411,7 @@
 					"visible"		"1"
 					"enabled"		"1"
 					"font"			"HudFontSmallest"
-					"fgcolor_override"	"TanLight"
+					"fgcolor_override"	"WhiteS"
 					"textAlignment"	"north-west"
 					"labelText"		"%stat_damage%"
 					"proportionaltoparent"	"1"
@@ -427,7 +429,7 @@
 					"visible"		"1"
 					"enabled"		"1"
 					"font"			"HudFontSmallest"
-					"fgcolor_override"	"TanLight"
+					"fgcolor_override"	"WhiteS"
 					"textAlignment"	"north-west"
 					"labelText"		"%stat_healing%"
 					"proportionaltoparent"	"1"
@@ -445,7 +447,7 @@
 					"visible"		"1"
 					"enabled"		"1"
 					"font"			"HudFontSmallest"
-					"fgcolor_override"	"TanLight"
+					"fgcolor_override"	"WhiteS"
 					"textAlignment"	"north-west"
 					"labelText"		"%stat_support%"
 					"proportionaltoparent"	"1"
@@ -464,7 +466,7 @@
 					"visible"		"1"
 					"enabled"		"1"
 					"font"			"HudFontSmallest"
-					"fgcolor_override"	"TanLight"
+					"fgcolor_override"	"WhiteS"
 					"textAlignment"	"north-west"
 					"labelText"		"%stat_score%"
 					"proportionaltoparent"	"1"

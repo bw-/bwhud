@@ -41,7 +41,7 @@
 			"mouseinputenabled"	"0"
 		
 			"proportionaltoparent"	"1"
-			"bgcolor_override"	"0 0 0 255"
+			"bgcolor_override"	"GrayBG"
 		}
 
 		"BGImage"
@@ -53,9 +53,9 @@
 			"zpos"			"0"
 			"wide"			"o4"
 			"tall"			"f0"
-			"visible"		"1"
-			"enabled"		"1"
-			"scaleImage"	"1"	
+			"visible"		"0"
+			"enabled"		"0"
+			"scaleImage"	"0"	
 			"proportionaltoparent"	"1"
 		}
 
@@ -78,11 +78,11 @@
 			"textinsetx"	"40"
 
 			"border_default"	"NoBorder"
-			"defaultBgColor_override"	"235 226 202 20"
+			"defaultBgColor_override"	"GrayBG"
 
 			"border_armed"		"NoBorder"
-			"armedBgColor_override"	"LightOrange"
-			"selectedBGColor_override" "Orange"
+			"armedBgColor_override"	"Flavor"
+			"selectedBGColor_override" "Flavor"
 
 			"sound_armed"		"ui/item_info_mouseover.wav"
 			"sound_depressed"	"UI/buttonclick.wav"
@@ -114,8 +114,8 @@
 		{
 			"fieldName"			"Shade"
 			"ControlName"		"EditablePanel"
-			"xpos"				"cs-0.5"
-			"ypos"				"0"
+			"xpos"				"6969"
+			"ypos"				"6969"
 			"zpos"				"0"
 			"wide"				"f0"
 			"tall"				"57"
@@ -164,7 +164,7 @@
 			"proportionaltoparent" "1"
 			"mouseinputenabled"	"0"
 
-			"fgcolor"		"TanLight"
+			"fgcolor"		"WhiteS"
 			"paintbackground"	"1"
 		}	
 
@@ -212,7 +212,7 @@
 			"enabled"		"1"
 
 			"wrap"			"1"
-			"fgcolor_override" "TanLight"
+			"fgcolor_override" "WhiteS"
 			"proportionaltoparent" "1"
 			"mouseinputenabled"	"0"
 		}
