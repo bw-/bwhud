@@ -33,7 +33,7 @@
 		"tall"			"0"
 		"visible"		"0"
 		"PaintBackgroundType"	"2"
-		"border"		"bwBG"
+		"border"		"NoBorder"
 		
 		"TipLabel"
 		{
