@@ -21,7 +21,7 @@
 		"tall"			"17"
 		"proportionaltoparent"	"1"
 		
-		"bgcolor_override"	"0 0 0 120"
+		"bgcolor_override"	"0 0 0 0"
 
 		"EntryToggleButton"
 		{
@@ -62,7 +62,7 @@
 			
 			"labeltext"			"#TF_Competitive_MatchHistory_Win"
 			"font"				"HudFontSmallestBold"
-			"fgcolor_override"	"95 164 44 255"
+			"fgcolor_override"	"Green"
 			"textAlignment"		"west"
 		}
 
@@ -80,7 +80,7 @@
 			
 			"labeltext"			"#TF_Competitive_MatchHistory_Loss"
 			"font"				"HudFontSmallestBold"
-			"fgcolor_override"	"141 63 63 255"
+			"fgcolor_override"	"Red"
 			"textAlignment"		"west"
 		}
 

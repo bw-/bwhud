@@ -17,7 +17,7 @@
 		"tabPosition"	"0"
 		"settitlebarvisible"	"0"
 		"PaintBackgroundType"	"0"
-		"bgcolor_override"	"46 43 42 255"
+		"bgcolor_override"	"GrayBG"
 		"proportionaltoparent"	"1"
 	}
 
@@ -25,18 +25,36 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"ModeBackgroundImage"
-		"xpos"			"0"
-		"ypos"			"0"
+		"xpos"			"6969"
+		"ypos"			"6969"
 		"zpos"			"-1"
 		"wide"			"f0"
 		"tall"			"p0.8"
 		"visible"		"0"
-		"enabled"		"1"
+		"enabled"		"0"
 		"mouseinputenabled" "0"
 		"image"			"competitive/comp_background_tier001a"
 		"scaleImage"	"1"
 	}
 
+	"BackgroundFooterCustom"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"BackgroundFooter2"
+		"xpos"			"0"
+		"ypos"			"420"
+		"zpos"			"-1"
+		"wide"			"f0"
+		"tall"			"62"
+		"visible"		"1"
+		"enabled"		"1"
+		"pinCorner"		"0"
+		"autoResize"	"0"
+		"PaintBackgroundType"	"2"
+		"border"				"NoBorder"
+		"bgcolor_override"		"GrayBG"
+	}
+	
 	"GameModesContainer"
 	{
 		"ControlName"	"EditablePanel"
@@ -60,7 +78,7 @@
 			"tall"			"p1"
 			"visible"		"1"
 			"PaintBackgroundType"	"2"
-			"border"		"MainMenuBGBorder"
+			"border"		"NoBorder"
 			"proportionaltoparent"	"1"
 
 			"pinCorner"		"2"
@@ -139,7 +157,7 @@
 				"labeltext"		"%selected_maps_count%"
 				"textAlignment"	"west"
 				"font"			"HudFontSmallest"
-				"fgcolor_override"	"TanLight"
+				"fgcolor_override"	"WhiteS"
 		
 				"mouseinputenabled"	"1"
 			}
@@ -157,7 +175,7 @@
 				"labeltext"		"#TF_Casual_QueueEstimation"
 				"textAlignment"	"east"
 				"font"			"HudFontSmallest"
-				"fgcolor_override"	"TanLight"
+				"fgcolor_override"	"WhiteS"
 				"textinsetx"	"5"
 				"visible"	"0"
 		
@@ -176,7 +194,7 @@
 				"proportionaltoparent"	"1"
 				"restrict_width" "0"
 
-				"border"		"MainMenuBGBorder"
+				"border"		"NoBorder"
 
 				"ScrollBar"
 				{

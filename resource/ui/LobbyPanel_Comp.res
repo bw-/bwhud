@@ -25,16 +25,34 @@
 	{
 		"ControlName"	"ImagePanel"
 		"fieldName"		"ModeBackgroundImage"
-		"xpos"			"0"
-		"ypos"			"0"
+		"xpos"			"6969"
+		"ypos"			"6969"
 		"zpos"			"-1"
 		"wide"			"f0"
 		"tall"			"p0.8"
 		"visible"		"0"
-		"enabled"		"1"
+		"enabled"		"0"
 		"mouseinputenabled" "0"
 		"image"			"competitive/comp_background_tier001a"
 		"scaleImage"	"1"
+	}
+	
+	"BackgroundHeaderCustom"
+	{
+		"ControlName"	"EditablePanel"
+		"fieldName"		"BackgroundHeader2"
+		"xpos"			"0"
+		"ypos"			"0"
+		"zpos"			"-2"
+		"wide"			"f0"
+		"tall"			"999"
+		"visible"		"1"
+		"enabled"		"1"
+		"pinCorner"		"0"
+		"autoResize"	"0"
+		"PaintBackgroundType"	"2"
+		"border"				"NoBorder"
+		"bgcolor_override"		"GrayBG"
 	}
 
 	"ScrollableContainer"
@@ -66,7 +84,7 @@
 			"command"		"show_leaderboards"
 			"labeltext"		"#TF_Competitive_ViewLeaderboards"
 			"font"			"HudFontSmallestBold"
-			"fgcolor_override"	"TanLight"
+			"fgcolor_override"	"WhiteS"
 			"textAlignment"	"center"
 
 			"sound_depressed"	"UI/buttonclick.wav"
@@ -89,7 +107,7 @@
 			"command"		"show_match_history"
 			"labeltext"		"#TF_Competitive_ViewMatches"
 			"font"			"HudFontSmallestBold"
-			"fgcolor_override"	"TanLight"
+			"fgcolor_override"	"WhiteS"
 			"textAlignment"	"center"
 
 			"sound_depressed"	"UI/buttonclick.wav"
@@ -108,7 +126,7 @@
 			"tall"			"p1"
 			"visible"		"1"
 			"PaintBackgroundType"	"2"
-			"border"		"MainMenuBGBorder"
+			"border"		"NoBorder"
 			"proportionaltoparent"	"1"
 
 			"pinCorner"		"2"
@@ -136,7 +154,7 @@
 				"fieldName"		"MatchHistoryCategories"
 				"xpos"			"cs-0.5"
 				"ypos"			"25"
-				"zpos"		"0"
+				"zpos"			"10"
 				"wide"			"p0.95"
 				"tall"			"20"
 				"visible"		"1"
@@ -153,7 +171,7 @@
 					"tall"			"p1.3"
 					"visible"		"1"
 					"proportionaltoparent"	"1"
-					"border"		"MainMenuBGBorder"
+					"border"		"NoBorder"
 				}
 
 				"SortArrow"
@@ -198,8 +216,8 @@
 					"textinsetx"		"15"
 
 					"defaultFgColor_override" "TanDark"
-					"armedFgColor_override"	"Orange"
-					"selectedFgColor_override" "TanLight"
+					"armedFgColor_override"	"Flavor"
+					"selectedFgColor_override" "WhiteS"
 
 					"image_selectedcolor"	"255 255 255 255"
 					"image_armedcolor"		"0 0 0 0"
@@ -227,13 +245,13 @@
 			
 					"labeltext"			"#TF_Competitive_Date"
 					"font"				"HudFontSmallest"
-					"fgcolor_override"	"TanLight"
+					"fgcolor_override"	"WhiteS"
 					"textAlignment"		"west"
 					"textinsetx"		"15"
 
 					"defaultFgColor_override" "TanDark"
-					"armedFgColor_override"	"Orange"
-					"selectedFgColor_override" "TanLight"
+					"armedFgColor_override"	"Flavor"
+					"selectedFgColor_override" "WhiteS"
 
 					"image_selectedcolor"	"255 255 255 255"
 					"image_armedcolor"		"0 0 0 0"
@@ -261,13 +279,13 @@
 			
 					"labeltext"			"#TF_Competitive_Map"
 					"font"				"HudFontSmallest"
-					"fgcolor_override"	"TanLight"
+					"fgcolor_override"	"WhiteS"
 					"textAlignment"		"west"
 					"textinsetx"		"15"
 
 					"defaultFgColor_override" "TanDark"
-					"armedFgColor_override"	"Orange"
-					"selectedFgColor_override" "TanLight"
+					"armedFgColor_override"	"Flavor"
+					"selectedFgColor_override" "WhiteS"
 
 					"image_selectedcolor"	"255 255 255 255"
 					"image_armedcolor"		"0 0 0 0"
@@ -294,12 +312,12 @@
 			
 					"labeltext"			"#TF_Competitive_KDR"
 					"font"				"HudFontSmallest"
-					"fgcolor_override"	"TanLight"
+					"fgcolor_override"	"WhiteS"
 					"textAlignment"		"west"
 
 					"defaultFgColor_override" "TanDark"
-					"armedFgColor_override"	"Orange"
-					"selectedFgColor_override" "TanLight"
+					"armedFgColor_override"	"Flavor"
+					"selectedFgColor_override" "WhiteS"
 
 					"image_selectedcolor"	"255 255 255 255"
 					"image_armedcolor"		"0 0 0 0"

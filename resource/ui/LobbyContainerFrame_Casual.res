@@ -22,6 +22,21 @@
 		"mouseinputenabled"	"0"
 
 		"matchgroup"	"MatchGroup_Casual_12v12"
+		"xp_source_notification_center_x"	"350"
+	}
+	
+	"SearchStatus"
+	{
+		"ControlName"	"CTFMatchmakingSearchStatusPanel"
+		"FieldName"		"SearchStatus"
+		"xpos"			"cs-0.5"
+		"ypos"			"-5"
+		"zpos"			"10000"
+		"wide"				"150"
+		"tall"				"65"
+		"visible"			"1"
+		"enabled"			"1"
+		"mouseinputenabled"	"1"
 	}
 
 	"ShowExplanationsButton"
@@ -35,8 +50,8 @@
 		"tall"			"20"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"tabPosition"	"0"
 		"labelText"		"?"
 		"font"			"HudFontSmallBold"
@@ -231,8 +246,8 @@
 	{
 		"ControlName"	"CExplanationPopup"
 		"fieldName"		"ModesExplanation"
-		"xpos"			"0"
-		"ypos"			"0"
+		"xpos"			"6969"
+		"ypos"			"6969"
 		"zpos"			"10000"
 		"wide"			"250"
 		"tall"			"210"

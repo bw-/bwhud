@@ -22,6 +22,7 @@
 		"mouseinputenabled"	"0"
 
 		"matchgroup"	"MatchGroup_Ladder_6v6"
+		"xp_source_notification_center_x"		"350"
 	}
 
 	"ShowExplanationsButton"
@@ -35,8 +36,8 @@
 		"tall"			"20"
 		"autoResize"	"0"
 		"pinCorner"		"0"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"tabPosition"	"0"
 		"labelText"		"?"
 		"font"			"HudFontSmallBold"

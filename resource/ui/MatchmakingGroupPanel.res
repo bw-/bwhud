@@ -20,7 +20,7 @@
 		"tall"				"f0"
 
 		"proportionaltoparent"	"1"
-		"border"		"MainMenuBGBorder"
+		"border"		"NoBorder"
 	}
 
 	"Checkbutton"
@@ -51,8 +51,8 @@
 		"zpos"			"3"
 		"wide"			"f0"
 		"tall"			"15"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"labelText"		"%excludes_text%"
 		"textinsetx"	"20"
 		"use_proportional_insets" "1"

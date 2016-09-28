@@ -15,7 +15,7 @@
 		"tabPosition"	"0"
 		"settitlebarvisible"	"0"
 		"PaintBackgroundType"	"0"
-		"bgcolor_override"	"46 43 42 255"
+		"bgcolor_override"	"GrayBG"
 		"proportionaltoparent"	"1"
 
 		"NavToRelay"	"MvMTourOfDutyGroupBox"
@@ -33,7 +33,7 @@
 		"tall"			"0"
 		"visible"		"0"
 		"PaintBackgroundType"	"2"
-		"border"		"MainMenuBGBorder"
+		"border"		"NoBorder"
 		
 		"TipLabel"
 		{
@@ -51,7 +51,7 @@
 			"pinCorner"		"0"
 			"visible"		"1"
 			"enabled"		"1"
-			"fgcolor_override"	"TanLight"
+			"fgcolor_override"	"WhiteS"
 			"auto_wide_tocontents"	"1"
 		}
 	}

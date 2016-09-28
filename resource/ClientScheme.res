@@ -122,6 +122,13 @@ Scheme
 		"GoalOrange"		"255 133 0"
 		"TFOrange"			"145 73 59 255"
 
+		"QuestGold"						"208 147 75 255"
+		"HalloweenThemeColor2015_Light"	"238 126 17 255"
+		"HalloweenThemeColor2015"		"135 54 16 255"
+		"HalloweenThemeColor2015_Dark"	"108 49 21 255"
+		"QuestStandardHighlight"		"0 255 0 255"
+		"QuestBonusHighlight"			"150 160 255 255"
+
 		
 		"RedSolid"			"254 27 4 255"
 		"Yellow"			"225 225 225 255"
@@ -5119,6 +5126,17 @@ Scheme
 				"custom"		"1" [$OSX]
 			}
 		}
+		"ScoreboardSmallest"
+		{
+			"1"
+			{
+				"name"		"Solomon-Normal"
+				"tall"		"6"
+				"weight"	"400"
+				"additive"	"0"
+				"antialias" "1"
+			}
+		}
 		"ScoreboardVerySmall"
 		{
 			"1"
@@ -6179,6 +6197,43 @@ Scheme
 				"additive"	"0"
 			}
 		}
+		"MMenuPlayListDesc"
+		{
+			"1"
+			{
+				"name"		"Solomon-Normal"
+				"tall"		"9"
+				"weight"	"400"
+				"antialias" "1"
+				"additive"	"0"
+			}
+		}
+		
+		"XPSource"
+		{
+			"1"
+			{
+				"name"		"TF2 Build"
+				"tall"		"11"
+				"weight"	"500"
+				"antialias" "1"
+				"custom"	"1"
+			}
+		}
+		
+		"XPSource_Glow"
+		{
+			"1"
+			{
+				"name"		"TF2 Build"
+				"tall"		"11"
+				"weight"	"500"
+				"blur"		"3"
+				"additive"	"1"
+				"antialias" "1"
+				"custom"	"1"
+			}
+		}
 	}
 
 	//
@@ -6579,6 +6634,17 @@ Scheme
 			"src_corner_width"		"23"
 			"draw_corner_width"		"0"				// screen size of the corners ( and sides ), proportional
 			"draw_corner_height" 	"0"	
+		}
+		TFFatLineBorderBlueBGMoreOpaque
+		{
+			"bordertype"			"scalable_image"
+			"backgroundtype"		"2"
+			
+			"image"					"../hud/color_panel_blu_more_opaque"
+			"src_corner_height"		"23"				// pixels inside the image
+			"src_corner_width"		"23"
+			"draw_corner_width"		"5"				// screen size of the corners ( and sides ), proportional
+			"draw_corner_height" 	"5"	
 		}
 		TFFatLineBorderBlueBGOpaque
 		{
