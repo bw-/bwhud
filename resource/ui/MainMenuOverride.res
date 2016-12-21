@@ -4137,7 +4137,7 @@
 			"ControlName"	"EditablePanel"
 			"fieldname"		"Background"
 			"xpos"			"cs-0.5"
-			"ypos"			"300"
+			"ypos"			"320"
 			"zpos"			"0"
 			"wide"			"p0.8"
 			"tall"			"120"
@@ -4291,27 +4291,22 @@
 				{
 					"0"
 					{
-						"item"		"Competitive Matchmaking Official"
+						"item"		"Keyless Winter 2016 Case"
 						"show_market"	"0"
 					}
 					"1"
 					{
-						"item"		"Taunt: The Carlton"
+						"item"		"Taunt: The Table Tantrum"
 						"show_market"	"0"
 					}
 					"2"
 					{
-						"item"		"Taunt: The Balloonibouncer"
+						"item"		"Taunt: Didgeridrongo"
 						"show_market"	"0"
 					}
 					"3"
 					{
-						"item"		"Taunt: Disco Fever"
-						"show_market"	"0"
-					}
-					"4"
-					{
-						"item"		"Taunt: The Fubar Fanfare"
+						"item"		"Taunt: Scotsmann's Stagger"
 						"show_market"	"0"
 					}
 				}
