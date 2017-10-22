@@ -8,38 +8,9 @@
 	}
 	"Version"
 	{
-		"label" "Release Version 2.4.6"
+		"label" "Release Version 2.5.0"
 		"command" "engine con_enable 1; engine showconsole; clear; echo Thanks for using my HUD!"
 		"OnlyAtMenu" "1"
-	}
-
-	"QuickplayButton"
-	{
-		"label" "#MMenu_StartPlaying" 
-		"command" "play_casual"
-		"OnlyAtMenu" "1"
-		"tooltip" "Quick Play"
-	}
-	"QuickplayChangeButton"
-	{
-		"label" "#MMenu_NewGame" 
-		"command" "quickplay"
-		"OnlyInGame" "1"
-		"tooltip" "Quick Play"
-	}
-	"PlayPVEButton"
-	{
-		"label" "#MMenu_PlayCoop" 
-		"command" "play_mvm"
-		"OnlyAtMenu" "1"
-		"tooltip" "Mann Up"
-	}
-	"PlayCompButton"
-	{
-		"label" "#MMenu_PlayComp"
-		"command" "play_competitive"
-		"OnlyAtMenu" "1"
-		"tooltip"	"Play Matchmaking!"
 	}
 	"ServerBrowserButton"
 	{

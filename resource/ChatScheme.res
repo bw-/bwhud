@@ -22,6 +22,7 @@ Scheme
 		"Orange"			"30 30 30 255"
 		"TransparentBlack"	"100 100 100 255"
 		"Black"				"0 0 0 255"
+		"Green"				"63 185 73 255"
 
 		"Blank"				"0 0 0 0"
 	}
