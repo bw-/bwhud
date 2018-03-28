@@ -7,15 +7,15 @@
 		"xpos"			"cs-0.5"
 		"ypos"			"0"
 		"zpos"			"10000"
-		"wide"			"260"
-		"tall"			"70"
+		"wide"			"200"
+		"tall"			"60"
 		"visible"		"1"
 		"proportionaltoparent"	"1"
 		"keyboardinputenabled"	"0"
 		"mouseinputenabled"		"1"
 
 		"collapsed_height"	"0"
-		"expanded_height"	"70"
+		"expanded_height"	"60"
 
 		"pinCorner"		"2"
 		"autoResize"	"1"
@@ -55,7 +55,7 @@
 
 			"DescLabel"
 			{
-				"ControlName"	"Label"
+				"ControlName"	"CAutoFittingLabel"
 				"fieldName"		"DescLabel"
 				"xpos"			"0"
 				"ypos"			"7"
@@ -67,9 +67,16 @@
 				"font"			"HudFontSmallBold"
 				"fgcolor_override"	"TanLight"
 				"textAlignment"	"center"
-				"labelText"		"#TF_Matchmaking_RollingQueue_NewMatchReady"
+				"labelText"		"%match_type%"
 				"proportionaltoparent"	"1"
 				"pinCorner"		"3"
+				
+				"fonts"
+				{
+					"0"		"HudFontSmallestBold"
+					"1"		"StorePromotionsTitle"
+					"2"		"FontStorePrice"
+				}
 			}
 
 			"AutoJoinLabel"
@@ -103,6 +110,7 @@
 				"autoResize"	"0"
 				"pinCorner"		"3"
 				"visible"		"1"
+
 				"enabled"		"1"
 				"tabPosition"	"0"
 				"font"			"HudFontSmallestBold"
@@ -111,25 +119,32 @@
 				"brighttext"	"0"
 				"Command"		"abandon_match"
 				"proportionaltoparent"	"1"
-				"labeltext"		"#TF_MM_Rejoin_Leave"
+				"labeltext"		"#TF_MM_Rejoin_Abandon"
 				"mouseinputenabled"	"1"
 				"keyboardinputenabled"	"0"
-				"actionsignallevel"	"1"
+				"actionsignallevel"	"2"
 				"paintbackground"	"1"
 
 				"sound_depressed"	"UI/buttonclick.wav"
 				"sound_released"	"UI/buttonclickrelease.wav"
 			}
 
-			"JoinNowButton"
+			"SmallJoinButton"
 			{
 				"ControlName"	"CExButton"
-				"fieldName"		"JoinNowButton"
+				"fieldName"		"SmallJoinButton"
 				"xpos"			"10"
 				"ypos"			"rs1-5"
+				"wide"			"90"
 				"zpos"			"100"
-				"wide"			"150"
 				"tall"			"15"
+
+				if_expected
+				{
+					"xpos"			"cs-0.5"
+					"wide"			"150"
+				}
+				
 				"autoResize"	"0"
 				"pinCorner"		"3"
 				"visible"		"1"
@@ -144,7 +159,7 @@
 				"labeltext"		"#TF_Matchmaking_RollingQueue_JoinNow"
 				"mouseinputenabled"	"1"
 				"keyboardinputenabled"	"0"
-				"actionsignallevel"	"1"
+				"actionsignallevel"	"2"
 
 				"armedBgColor_override"		"CreditsGreen"
 				"defaultBgColor_override"	"SaleGreen"
@@ -152,6 +167,77 @@
 				"sound_depressed"	"UI/buttonclick.wav"
 				"sound_released"	"UI/buttonclickrelease.wav"
 			}
+			"WideJoinButton"
+			{
+				"ControlName"	"CExButton"
+				"fieldName"		"WideJoinButton"
+				"xpos"			"cs-0.5"
+				"ypos"			"rs1-5"
+				"wide"			"150"
+				"zpos"			"100"
+				"tall"			"15"
+				
+				"autoResize"	"0"
+				"pinCorner"		"3"
+				"visible"		"1"
+				"enabled"		"1"
+				"tabPosition"	"0"
+				"font"			"HudFontSmallestBold"
+				"textAlignment"	"center"
+				"dulltext"		"0"
+				"brighttext"	"0"
+				"Command"		"join_match"
+				"proportionaltoparent"	"1"
+				"labeltext"		"#TF_Matchmaking_RollingQueue_JoinNow"
+				"mouseinputenabled"	"1"
+				"keyboardinputenabled"	"0"
+				"actionsignallevel"	"2"
+
+				"armedBgColor_override"		"CreditsGreen"
+				"defaultBgColor_override"	"SaleGreen"
+
+				"sound_depressed"	"UI/buttonclick.wav"
+				"sound_released"	"UI/buttonclickrelease.wav"
+			}
+
+			"JoiningLabel"
+			{
+				"ControlName"	"Label"
+				"fieldName"		"JoiningLabel"
+				"xpos"			"cs-1"
+				"ypos"			"rs1-17"
+				"wide"			"f0"
+				"zpos"			"100"
+				"tall"			"20"
+				"visible"		"1"
+				"enabled"		"1"
+				"font"			"HudFontSmallest"
+				"fgcolor_override"	"TanLight"
+				"textAlignment"	"east"
+				"labelText"		"#TF_Matchmaking_RollingQueue_MatchReadyJoining"
+				"proportionaltoparent"	"1"
+				"pinCorner"		"3"
+			}
+
+			"Spinner"
+			{
+				"ControlName"	"CTFLogoPanel"
+				"fieldName"		"Spinner"
+				"xpos"			"c+5"
+				"ypos"			"rs1-17"
+				"zpos"			"104"
+				"wide"			"o1"
+				"tall"			"25"
+				"visible"		"1"
+
+				"proportionaltoparent"	"1"
+				"mouseinputenabled"	"0"
+				"alpha"			"200"
+
+				"radius"		"10"
+				"velocity"		"250"
+				"fgcolor_override"	"Orange"
+			}
 		}
-		}
+	}
 }

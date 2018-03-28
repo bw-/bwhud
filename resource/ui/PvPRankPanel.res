@@ -6,7 +6,7 @@
 		"fieldName"		"ModelContainer"
 		"xpos"			"cs-0.5"
 		"ypos"			"cs-0.5"
-		"zpos"			"13"		
+		"zpos"			"3"		
 		"wide"			"f0"
 		"tall"			"f0"
 		"proportionaltoparent"	"1"
@@ -23,6 +23,11 @@
 			"tall"			"f0"
 			"visible"		"1"
 			"proportionaltoparent"	"1"
+
+			if_mini
+			{
+				"xpos"		"cs-0.5-228"
+			}
 
 			"ParticleEffects"
 			{
@@ -44,9 +49,9 @@
 		{
 			"ControlName"	"CBaseModelPanel"
 			"fieldName"		"RankModel"
-			"xpos"			"cs-1.5"
-			"ypos"			"cs-1.5"
-			"zpos"			"15"		
+			"xpos"			"cs-0.5"
+			"ypos"			"cs-0.5"
+			"zpos"			"0"		
 			"wide"			"o1"
 			"tall"			"p0.12"
 			"autoResize"	"0"
@@ -110,13 +115,18 @@
 			"fieldName"		"AboveModelParticlePanel"
 			"xpos"			"0"
 			"ypos"			"0"
-			"zpos"			"16"
+			"zpos"			"1"
 			"wide"			"f0"
 			"tall"			"f0"
 			"visible"		"1"
 			"proportionaltoparent"	"1"
 
 			"paintbackground"	"0"
+
+			if_mini
+			{
+				"xpos"		"cs-0.5-228"
+			}
 
 			"ParticleEffects"
 			{
@@ -156,8 +166,8 @@
 		{
 			"ControlName"	"Button"
 			"fieldName"		"MedalButton"
-			"xpos"			"c-140"
-			"ypos"			"c-150"
+			"xpos"			"cs-0.5"
+			"ypos"			"cs-0.5+2"
 			"zpos"			"100"
 			"wide"			"o1"
 			"tall"			"42"
@@ -175,14 +185,13 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"BGPanel"
-		"xpos"			"c-300"
-		"ypos"			"10"
-		"zpos"			"15"
+		"xpos"			"rs1"
+		"ypos"			"20"
+		"zpos"			"-1"
 		"wide"			"260"
 		"tall"			"f40"
-		"visible"		"1"
+		"visible"		"0"
 		"PaintBackgroundType"	"2"
-		"border"		""
 		"proportionaltoparent"	"1"
 
 		if_mini
@@ -205,7 +214,7 @@
 			"visible"		"1"
 			"enabled"		"1"
 			"font"			"HudFontSmallishBold"
-			"fgcolor_override"	"White"
+			"fgcolor_override"	"TanLight"
 			"textAlignment"	"north-west"
 			"labelText"		"%name%"
 			"proportionaltoparent"	"1"
@@ -216,27 +225,71 @@
 			}
 		}
 
-		"LevelLabel"
+		"DescLine1"
 		{
-			"ControlName"	"Label"
-			"fieldName"		"LevelLabel"
+			"ControlName"	"CAutoFittingLabel"
+			"fieldName"		"DescLine1"
 			"xpos"			"65"
-			"ypos"			"20"
-			"wide"			"f0"
+			"ypos"			"19"
+			"wide"			"195"
 			"zpos"			"100"
 			"tall"			"20"
 			"visible"		"1"
 			"enabled"		"1"
 			"font"			"HudFontSmallestBold"
-			"fgcolor_override"	"White"
+			"fgcolor_override"	"TanLight"
 			"textAlignment"	"north-west"
-			"labelText"		"%level%"
+			"labelText"		"%desc1%"
 			"proportionaltoparent"	"1"
 
 			if_mini
 			{
 				"xpos"	"67"
 				"ypos"	"4"
+			}
+
+			"fonts"
+			{
+				"0"		"HudFontSmallestBold"
+				"1"		"StorePromotionsTitle"
+				"2"		"FontStorePrice"
+			}
+		}
+
+		"DescLine2"
+		{
+			"ControlName"	"CAutoFittingLabel"
+			"fieldName"		"DescLine2"
+			"xpos"			"65"
+			"ypos"			"29"
+			"wide"			"195"
+			"zpos"			"100"
+			"tall"			"20"
+			"visible"		"1"
+			"enabled"		"1"
+			"font"			"HudFontSmallestBold"
+			"fgcolor_override"	"TanLight"
+			"textAlignment"	"north-west"
+			"labelText"		"%desc2%"
+			"proportionaltoparent"	"1"
+
+			if_mini
+			{
+				"xpos"	"67"
+				"ypos"	"4"
+			}
+
+			"fonts"
+			{
+				"0"		"HudFontSmallestBold"
+				"1"		"StorePromotionsTitle"
+				"2"		"FontStorePrice"
+			}
+
+			"colors"
+			{
+				"1"		"CreditsGreen"
+				"2"		"TanLight"
 			}
 		}
 
@@ -281,7 +334,7 @@
 					"visible"		"1"
 					"enabled"		"1"
 					"font"			"ItemFontAttribSmall"
-					"fgcolor_override"	"White"
+					"fgcolor_override"	"TanLight"
 					"textAlignment"	"south-west"
 					"labelText"		"%current_xp%"
 					"proportionaltoparent"	"1"
@@ -299,7 +352,7 @@
 					"visible"		"1"
 					"enabled"		"1"
 					"font"			"ItemFontAttribSmall"
-					"fgcolor_override"	"White"
+					"fgcolor_override"	"TanLight"
 					"textAlignment"	"south-east"
 					"labelText"		"%next_level_xp%"
 					"proportionaltoparent"	"1"
@@ -405,7 +458,7 @@
 					"visible"		"1"
 					"enabled"		"1"
 					"font"			"HudFontSmallest"
-					"fgcolor_override"	"White"
+					"fgcolor_override"	"TanLight"
 					"textAlignment"	"north-west"
 					"labelText"		"%stat_games%"
 					"proportionaltoparent"	"1"
@@ -423,7 +476,7 @@
 					"visible"		"1"
 					"enabled"		"1"
 					"font"			"HudFontSmallest"
-					"fgcolor_override"	"White"
+					"fgcolor_override"	"TanLight"
 					"textAlignment"	"north-west"
 					"labelText"		"%stat_kills%"
 					"proportionaltoparent"	"1"
@@ -441,7 +494,7 @@
 					"visible"		"1"
 					"enabled"		"1"
 					"font"			"HudFontSmallest"
-					"fgcolor_override"	"White"
+					"fgcolor_override"	"TanLight"
 					"textAlignment"	"north-west"
 					"labelText"		"%stat_deaths%"
 					"proportionaltoparent"	"1"
@@ -460,7 +513,7 @@
 					"visible"		"1"
 					"enabled"		"1"
 					"font"			"HudFontSmallest"
-					"fgcolor_override"	"White"
+					"fgcolor_override"	"TanLight"
 					"textAlignment"	"north-west"
 					"labelText"		"%stat_damage%"
 					"proportionaltoparent"	"1"
@@ -478,7 +531,7 @@
 					"visible"		"1"
 					"enabled"		"1"
 					"font"			"HudFontSmallest"
-					"fgcolor_override"	"White"
+					"fgcolor_override"	"TanLight"
 					"textAlignment"	"north-west"
 					"labelText"		"%stat_healing%"
 					"proportionaltoparent"	"1"
@@ -496,7 +549,7 @@
 					"visible"		"1"
 					"enabled"		"1"
 					"font"			"HudFontSmallest"
-					"fgcolor_override"	"White"
+					"fgcolor_override"	"TanLight"
 					"textAlignment"	"north-west"
 					"labelText"		"%stat_support%"
 					"proportionaltoparent"	"1"
@@ -515,7 +568,7 @@
 					"visible"		"1"
 					"enabled"		"1"
 					"font"			"HudFontSmallest"
-					"fgcolor_override"	"White"
+					"fgcolor_override"	"TanLight"
 					"textAlignment"	"north-west"
 					"labelText"		"%stat_score%"
 					"proportionaltoparent"	"1"
