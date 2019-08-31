@@ -13,7 +13,7 @@
 		"visible"				"1"
 		"enabled"				"1"
 		"fgcolor_override"      "White"
-		"labelText"				"BOMB"
+		"labelText"				"#TF_Charge"
 		"textAlignment"			"west"
 		"font"					"solFontRegular8"
 	}	
