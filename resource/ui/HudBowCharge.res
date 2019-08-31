@@ -1,22 +1,5 @@
 "Resource/UI/HudBowCharge.res"
 {
-	"ChargeLabel"
-	{
-		"ControlName"			"CExLabel"
-		"fieldName"				"ChargeLabel"
-		"xpos"			"0"
-		"ypos"			"23"
-		"zpos"			"10"
-		"wide"			"120"
-		"tall"			"8"
-		"pinCorner"				"2"
-		"visible"				"1"
-		"enabled"				"1"
-		"fgcolor_override" "White"
-		"labelText"				"BOW"
-		"textAlignment"			"west"
-		"font"					"solFontRegular8"
-	}	
 	"ChargeMeter"
 	{	
 		"ControlName"	"ContinuousProgressBar"
